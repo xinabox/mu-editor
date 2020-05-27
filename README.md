@@ -2,8 +2,8 @@
 ☒ version of the mu-editor from codewith.mu
 
 # Downloads 
-- MacOS
-- Windows
+- MacOS: https://github.com/xinabox/mu-editor/releases/download/v1.1.0a2/mu-editor.dmg
+- Windows: 
 - Find them here: https://github.com/xinabox/mu-editor/releases/latest
 
 ## Temporary Release
