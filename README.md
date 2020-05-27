@@ -1,3 +1,5 @@
+[![HitCount](http://hits.dwyl.com/xinabox/mu-editor.svg)](http://hits.dwyl.com/xinabox/mu-editor)
+
 # mu-editor
 ☒ version of the mu-editor from codewith.mu
 
