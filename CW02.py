@@ -4,13 +4,14 @@ import network
 import time
 import esp32
 import micropython
+import sys
 
 # Special for CW02
-sdaPin = 21
-sclPin = 22
-redPin = 25
-grnPin = 26
-bluPin = 27
+sdaPin = const(21)
+sclPin = const(22)
+redPin = const(25)
+grnPin = const(26)
+bluPin = const(27)
 
 # Generic ESP32
 micropython.alloc_emergency_exception_buf(100)
@@ -81,5 +82,10 @@ xinabox.scan()
 print(
     "Temperature: {:.2f} C".format((esp32.raw_temperature() - 32) * 5 / 9)
 )
+_, mpv, mpy = sys.implementation
+mpv = '.'.join(map(str,mpv))
+print("This ran on Python v.{}, uPython v.{}, mpy v.{}".format(sys.version,mpv,mpy))
 tim.deinit()
 tim.init(period=50, mode=Timer.ONE_SHOT, callback=lambda t: LED.allOff())
+
+
